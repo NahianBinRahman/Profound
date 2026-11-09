@@ -87,44 +87,44 @@ export function Testimonials() {
             <SpotlightCard
               data-cursor
               data-cursor-text="STATS"
-              className="h-full p-8 sm:p-10 flex flex-col justify-between hover:border-[#00e5ff]/30 transition-all duration-500 shadow-[0_20px_50px_rgba(0,0,0,0.85)]"
+              className="h-full p-6 sm:p-10 flex flex-col justify-between hover:border-[#00e5ff]/30 transition-all duration-500 shadow-[0_20px_50px_rgba(0,0,0,0.85)]"
             >
               <div>
-                <p className="text-xs font-mono tracking-wider uppercase text-neutral-400 mb-8">
+                <p className="text-xs font-mono tracking-wider uppercase text-neutral-400 mb-6 sm:mb-8">
                   Demonstrated Standards
                 </p>
 
-                <div className="space-y-8">
+                <div className="grid grid-cols-3 lg:grid-cols-1 gap-4 lg:space-y-8">
                   <div>
-                    <div className="text-4xl sm:text-5xl font-black text-white flex items-center">
-                      6<span className="text-[#00e5ff] font-light ml-1">+</span>
+                    <div className="text-2xl sm:text-4xl lg:text-5xl font-black text-white flex items-center">
+                      6<span className="text-[#00e5ff] font-light ml-0.5">+</span>
                     </div>
-                    <p className="text-xs text-neutral-400 mt-1 font-mono uppercase tracking-wider">
-                      Integrated Practice Disciplines
+                    <p className="text-[10px] sm:text-xs text-neutral-400 mt-1 font-mono uppercase tracking-wider">
+                      Practice Disciplines
                     </p>
                   </div>
 
                   <div>
-                    <div className="text-4xl sm:text-5xl font-black text-white flex items-center">
-                      99.99<span className="text-[#00e5ff] font-light ml-1">%</span>
+                    <div className="text-2xl sm:text-4xl lg:text-5xl font-black text-white flex items-center">
+                      99.99<span className="text-[#00e5ff] font-light ml-0.5">%</span>
                     </div>
-                    <p className="text-xs text-neutral-400 mt-1 font-mono uppercase tracking-wider">
-                      Cloud SLA Target Standard
+                    <p className="text-[10px] sm:text-xs text-neutral-400 mt-1 font-mono uppercase tracking-wider">
+                      Cloud SLA Target
                     </p>
                   </div>
 
                   <div>
-                    <div className="text-4xl sm:text-5xl font-black text-white flex items-center">
-                      100<span className="text-[#00e5ff] font-light ml-1">%</span>
+                    <div className="text-2xl sm:text-4xl lg:text-5xl font-black text-white flex items-center">
+                      100<span className="text-[#00e5ff] font-light ml-0.5">%</span>
                     </div>
-                    <p className="text-xs text-neutral-400 mt-1 font-mono uppercase tracking-wider">
-                      Type-Safe &amp; Zero Legacy Debt
+                    <p className="text-[10px] sm:text-xs text-neutral-400 mt-1 font-mono uppercase tracking-wider">
+                      Type-Safe Code
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="pt-8 border-t border-white/[0.06] text-xs font-mono text-neutral-400 flex items-center gap-2">
+              <div className="mt-6 lg:mt-0 pt-6 sm:pt-8 border-t border-white/[0.06] text-xs font-mono text-neutral-400 flex items-center gap-2">
                 <Shield className="w-4 h-4 text-[#00e5ff]" />
                 <span>Full confidentiality maintained</span>
               </div>
@@ -136,7 +136,7 @@ export function Testimonials() {
             <SpotlightCard
               data-cursor
               data-cursor-text="PARTNER"
-              className="h-full p-8 sm:p-12 flex flex-col justify-between shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(0,229,255,0.12)] hover:border-[#00e5ff]/35 transition-all duration-500"
+              className="h-full p-6 sm:p-12 flex flex-col justify-between shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(0,229,255,0.12)] hover:border-[#00e5ff]/35 transition-all duration-500"
             >
               <div>
                 <div className="flex items-center justify-between pb-6 border-b border-white/[0.08]">

@@ -108,10 +108,10 @@ export function OurApproach() {
                 <SpotlightCard
                   data-cursor
                   data-cursor-text="STAGE"
-                  className="group p-8 flex flex-col justify-between hover:border-[#00e5ff]/30 transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(0,229,255,0.12)] h-full"
+                  className="group p-6 sm:p-8 flex flex-col justify-between hover:border-[#00e5ff]/30 transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(0,229,255,0.12)] h-full"
                 >
                   <div>
-                    <div className="flex items-center justify-between mb-8">
+                    <div className="flex items-center justify-between mb-6 sm:mb-8">
                       <span className="text-3xl font-black font-mono text-neutral-500 group-hover:text-[#00e5ff] transition-colors duration-300">
                         {s.step}
                       </span>

@@ -28,6 +28,7 @@ export function SpotlightCard({
 
   const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     if (!divRef.current || isFocused) return;
+    if (typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches) return;
 
     const div = divRef.current;
     const rect = div.getBoundingClientRect();
@@ -58,6 +59,7 @@ export function SpotlightCard({
   }, []);
 
   const handleMouseEnter = useCallback(() => {
+    if (typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches) return;
     setOpacity(1);
   }, []);
 

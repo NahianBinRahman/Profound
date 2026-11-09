@@ -20,12 +20,12 @@ export function CtaSection() {
           <SpotlightCard
             data-cursor
             data-cursor-text="START"
-            className="rounded-3xl bg-gradient-to-b from-[#0a0e18]/90 via-[#07090e]/95 to-[#050608] border border-white/[0.12] p-8 sm:p-16 text-center relative overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.9),0_0_50px_rgba(0,229,255,0.12)] hover:border-[#00e5ff]/40 transition-all duration-500"
+            className="rounded-3xl bg-gradient-to-b from-[#0a0e18]/90 via-[#07090e]/95 to-[#050608] border border-white/[0.12] p-6 sm:p-16 text-center relative overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.9),0_0_50px_rgba(0,229,255,0.12)] hover:border-[#00e5ff]/40 transition-all duration-500"
           >
             {/* Subtle Top Specular Line */}
             <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#00e5ff]/60 to-transparent pointer-events-none" />
 
-            <Badge variant="electric" dot className="mb-6 mx-auto">
+            <Badge variant="electric" dot className="mb-5 sm:mb-6 mx-auto">
               Initiate Engagement
             </Badge>
 
@@ -37,16 +37,17 @@ export function CtaSection() {
               <span className="text-[#00e5ff]">?</span>
             </h2>
 
-            <p className="mt-6 text-base sm:text-xl text-neutral-400 max-w-2xl mx-auto leading-relaxed">
+            <p className="mt-4 sm:mt-6 text-sm sm:text-xl text-neutral-400 max-w-2xl mx-auto leading-relaxed">
               Partner with an elite digital agency combining high-precision software
               engineering, cloud security, and unforgettable brand design.
             </p>
 
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 sm:gap-4 w-full sm:w-auto">
               <Button
                 href="/contact"
                 variant="electric"
                 size="lg"
+                className="w-full sm:w-auto justify-center font-bold shadow-[0_0_25px_rgba(0,229,255,0.4)]"
                 icon={<ArrowUpRight className="w-5 h-5 text-[#050608]" />}
               >
                 Start a Project
@@ -56,22 +57,23 @@ export function CtaSection() {
                 href="/contact?type=consultation"
                 variant="glass"
                 size="lg"
+                className="w-full sm:w-auto justify-center"
                 icon={<Calendar className="w-4 h-4 text-neutral-400" />}
               >
                 Schedule Consultation
               </Button>
             </div>
 
-            <div className="mt-12 pt-8 border-t border-white/[0.08] flex flex-wrap items-center justify-center gap-6 sm:gap-12 text-xs font-mono text-neutral-400">
-              <span className="flex items-center gap-2">
+            <div className="mt-10 sm:mt-12 pt-6 sm:pt-8 border-t border-white/[0.08] grid grid-cols-1 sm:flex sm:flex-wrap items-center justify-center gap-3 sm:gap-12 text-xs font-mono text-neutral-400 text-left sm:text-center">
+              <span className="flex items-center gap-2 justify-center sm:justify-start">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#00e5ff]" />
                 Fixed Milestone Quotes
               </span>
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 justify-center sm:justify-start">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#00e5ff]" />
                 Direct Lead Engineer Access
               </span>
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 justify-center sm:justify-start">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#00e5ff]" />
                 Global Delivery Standards
               </span>

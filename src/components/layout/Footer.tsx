@@ -26,9 +26,9 @@ export function Footer() {
       </div>
 
       <Container className="relative z-10">
-        {/* 2. Segmented Social Action Strip (Visuvate Screenshot 232230 Inspiration) */}
-        <div className="grid grid-cols-2 md:grid-cols-4 border-y border-white/[0.08] divide-x divide-white/[0.08] mb-16">
-          {SOCIAL_LINKS.map((item) => {
+        {/* 2. Segmented Social Action Strip */}
+        <div className="grid grid-cols-2 md:grid-cols-4 border-y border-white/[0.08] mb-16">
+          {SOCIAL_LINKS.map((item, idx) => {
             const Icon = item.icon;
             return (
               <a
@@ -36,13 +36,17 @@ export function Footer() {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group py-5 px-6 flex items-center justify-between text-neutral-400 hover:text-white hover:bg-white/[0.03] transition-all duration-300"
+                className={`group py-4 sm:py-5 px-4 sm:px-6 flex items-center justify-between text-neutral-400 hover:text-white hover:bg-white/[0.03] transition-all duration-300 ${
+                  idx % 2 === 0 ? "border-r border-white/[0.08]" : ""
+                } ${idx < 2 ? "border-b md:border-b-0 border-white/[0.08]" : ""} ${
+                  idx === 1 ? "md:border-r md:border-white/[0.08]" : ""
+                } ${idx === 2 ? "md:border-r md:border-white/[0.08]" : ""}`}
               >
-                <div className="flex items-center gap-3">
-                  <Icon className="w-4 h-4 text-neutral-400 group-hover:text-[#00e5ff] transition-colors" />
-                  <span className="text-sm font-medium">{item.name}</span>
+                <div className="flex items-center gap-2.5 sm:gap-3">
+                  <Icon className="w-4 h-4 text-neutral-400 group-hover:text-[#00e5ff] transition-colors shrink-0" />
+                  <span className="text-xs sm:text-sm font-medium truncate">{item.name}</span>
                 </div>
-                <ArrowUpRight className="w-4 h-4 text-neutral-400 group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-neutral-400 group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all shrink-0" />
               </a>
             );
           })}
@@ -191,9 +195,9 @@ export function Footer() {
         </div>
 
         {/* 4. Bottom Legal Strip */}
-        <div className="pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-neutral-400">
+        <div className="pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-neutral-400 text-center sm:text-left">
           <p>&copy; 2026 Profound Agency. All rights reserved.</p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             <Link href="/privacy" className="hover:text-neutral-400 transition-colors">
               Privacy Policy
             </Link>

@@ -139,13 +139,13 @@ export function Navbar() {
               <span>Available for Q1/Q2</span>
             </div>
 
-            {/* Prominent "Let's Talk" button */}
+            {/* Prominent "Let's Talk" CTA: Visible on both mobile and desktop */}
             <Button
               href="/contact"
-              variant="primary"
+              variant="electric"
               size="sm"
-              icon={<ArrowUpRight className="w-3.5 h-3.5 text-neutral-900" />}
-              className="hidden sm:inline-flex shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+              icon={<ArrowUpRight className="w-3.5 h-3.5 text-[#050608]" />}
+              className="text-xs px-3.5 py-1.5 font-bold shadow-[0_0_15px_rgba(0,229,255,0.35)]"
             >
               Let&apos;s Talk
             </Button>
@@ -210,19 +210,27 @@ export function Navbar() {
                 );
               })}
 
-              <div className="mt-4 pt-4 border-t border-white/10 flex flex-col gap-3">
+              <div className="mt-4 pt-4 border-t border-white/10 flex flex-col gap-2.5">
                 <Button
                   href="/contact"
                   variant="electric"
                   size="md"
-                  className="w-full justify-center"
+                  className="w-full justify-center font-bold shadow-[0_0_20px_rgba(0,229,255,0.4)]"
                   icon={<ArrowUpRight className="w-4 h-4 text-[#050608]" />}
                 >
-                  Let&apos;s Talk
+                  Start a Project
                 </Button>
-                <div className="flex items-center justify-center gap-2 text-xs text-neutral-400 py-1">
-                  <span className="w-2 h-2 rounded-full bg-[#00e5ff]" />
-                  <span>Available for high-impact projects</span>
+                <Button
+                  href="/services"
+                  variant="glass"
+                  size="md"
+                  className="w-full justify-center"
+                >
+                  Explore Practice Areas
+                </Button>
+                <div className="flex items-center justify-center gap-2 text-xs text-neutral-400 py-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span>Accepting Select Q1/Q2 Engagements</span>
                 </div>
               </div>
             </div>

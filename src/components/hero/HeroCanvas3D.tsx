@@ -24,11 +24,13 @@ export function HeroCanvas3D() {
     let animationFrameId: number;
     const width = container.clientWidth;
     const height = container.clientHeight;
+    const isMobile = width < 768;
 
     // Scene & Camera
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
-    camera.position.z = 6;
+    camera.position.z = isMobile ? 8.8 : 6;
+    camera.position.y = isMobile ? 0.35 : 0;
 
     // Renderer
     const renderer = new THREE.WebGLRenderer({
@@ -37,13 +39,14 @@ export function HeroCanvas3D() {
       powerPreference: "high-performance",
     });
     renderer.setSize(width, height);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1.5 : 2));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.2;
     container.appendChild(renderer.domElement);
 
     // Group for layered 3D object
     const mainGroup = new THREE.Group();
+    mainGroup.scale.setScalar(isMobile ? 0.72 : 1);
     scene.add(mainGroup);
 
     // 1. Primary Sculptural Core (Faceted Torus Knot / Monolith)
@@ -149,7 +152,11 @@ export function HeroCanvas3D() {
       if (!container) return;
       const newWidth = container.clientWidth;
       const newHeight = container.clientHeight;
+      const isMobileRes = newWidth < 768;
       camera.aspect = newWidth / newHeight;
+      camera.position.z = isMobileRes ? 8.8 : 6;
+      camera.position.y = isMobileRes ? 0.35 : 0;
+      mainGroup.scale.setScalar(isMobileRes ? 0.72 : 1);
       camera.updateProjectionMatrix();
       renderer.setSize(newWidth, newHeight);
     };

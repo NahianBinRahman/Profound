@@ -116,8 +116,14 @@ export function PlatformFlexibility() {
                 </p>
               </div>
 
-              {/* Dual Sliding Marquee Container with edge mask */}
-              <div className="space-y-4 my-auto overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+              {/* Dual Sliding Marquee Container with WebKit + standard edge mask */}
+              <div
+                className="space-y-3.5 my-auto overflow-hidden"
+                style={{
+                  WebkitMaskImage: "linear-gradient(to right, transparent, black 6%, black 94%, transparent)",
+                  maskImage: "linear-gradient(to right, transparent, black 6%, black 94%, transparent)",
+                }}
+              >
                 {/* Track 1: Gliding Left */}
                 <div className="flex items-center gap-3 sm:gap-4 animate-marquee select-none py-1">
                   {row1Duplicated.map((platform, idx) => {
@@ -125,10 +131,10 @@ export function PlatformFlexibility() {
                     return (
                       <div
                         key={`row1-${platform.name}-${idx}`}
-                        className="group w-44 sm:w-48 shrink-0 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-[#00e5ff]/40 hover:bg-white/[0.06] p-4 flex items-center gap-3.5 transition-all duration-300 shadow-sm cursor-default"
+                        className="group w-40 sm:w-48 shrink-0 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-[#00e5ff]/40 hover:bg-white/[0.06] p-3.5 sm:p-4 flex items-center gap-3 sm:gap-3.5 transition-all duration-300 shadow-sm cursor-default"
                       >
-                        <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:border-[#00e5ff]/40 transition-all shadow-inner">
-                          <Icon className="w-5 h-5" />
+                        <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:border-[#00e5ff]/40 transition-all shadow-inner">
+                          <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
                         </div>
                         <div className="overflow-hidden">
                           <h5 className="text-xs sm:text-sm font-semibold text-white truncate group-hover:text-[#00e5ff] transition-colors">
@@ -150,10 +156,10 @@ export function PlatformFlexibility() {
                     return (
                       <div
                         key={`row2-${platform.name}-${idx}`}
-                        className="group w-44 sm:w-48 shrink-0 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-[#00e5ff]/40 hover:bg-white/[0.06] p-4 flex items-center gap-3.5 transition-all duration-300 shadow-sm cursor-default"
+                        className="group w-40 sm:w-48 shrink-0 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-[#00e5ff]/40 hover:bg-white/[0.06] p-3.5 sm:p-4 flex items-center gap-3 sm:gap-3.5 transition-all duration-300 shadow-sm cursor-default"
                       >
-                        <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:border-[#00e5ff]/40 transition-all shadow-inner">
-                          <Icon className="w-5 h-5" />
+                        <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:border-[#00e5ff]/40 transition-all shadow-inner">
+                          <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
                         </div>
                         <div className="overflow-hidden">
                           <h5 className="text-xs sm:text-sm font-semibold text-white truncate group-hover:text-[#00e5ff] transition-colors">
@@ -182,7 +188,13 @@ export function PlatformFlexibility() {
       </Container>
 
       {/* Ticker Ribbon */}
-      <div className="w-full overflow-hidden border-y border-white/[0.06] bg-[#07090e]/60 py-3 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+      <div
+        className="w-full overflow-hidden border-y border-white/[0.06] bg-[#07090e]/60 py-3"
+        style={{
+          WebkitMaskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+          maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+        }}
+      >
         <div className="flex shrink-0 items-center gap-8 animate-marquee select-none">
           {TICKER_ITEMS.concat(TICKER_ITEMS).concat(TICKER_ITEMS).map((item, idx) => (
             <div

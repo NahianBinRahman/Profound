@@ -98,25 +98,25 @@ export function SelectedWorks() {
                 <SpotlightCard
                   data-cursor
                   data-cursor-text="VIEW"
-                  className="group p-6 sm:p-8 flex flex-col justify-between hover:border-white/20 transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.85)] h-full"
+                  className="group p-5 sm:p-8 flex flex-col justify-between hover:border-white/20 transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.85)] h-full"
                 >
                   {/* Large Visual Browser/Device Container */}
-                  <div className="relative w-full aspect-[16/10] rounded-2xl bg-[#06070a] border border-white/10 overflow-hidden mb-6 flex flex-col group/mockup">
+                  <div className="relative w-full min-h-[240px] sm:aspect-[16/10] rounded-2xl bg-[#06070a] border border-white/10 overflow-hidden mb-6 flex flex-col group/mockup">
                     {/* Browser Window Header */}
-                    <div className="px-4 py-2.5 bg-black/80 border-b border-white/[0.08] flex items-center justify-between relative z-10">
+                    <div className="px-3.5 sm:px-4 py-2 sm:py-2.5 bg-black/80 border-b border-white/[0.08] flex items-center justify-between relative z-10">
                       <div className="flex items-center gap-1.5">
                         <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
                         <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
                         <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
                       </div>
-                      <span className="text-[10px] font-mono text-neutral-400">
+                      <span className="text-[10px] font-mono text-neutral-400 truncate max-w-[180px] sm:max-w-none">
                         https://{project.mockupDetails.domain}
                       </span>
                       <div className="w-3 h-3" />
                     </div>
 
                     {/* Simulated High-Res Project UI with subtle scale on hover */}
-                    <div className="flex-1 relative bg-gradient-to-br from-[#0c1017] via-[#050608] to-[#111726] p-6 flex flex-col justify-between overflow-hidden transition-transform duration-700 ease-out group-hover/mockup:scale-[1.03]">
+                    <div className="flex-1 relative bg-gradient-to-br from-[#0c1017] via-[#050608] to-[#111726] p-4 sm:p-6 flex flex-col justify-between overflow-hidden transition-transform duration-700 ease-out group-hover/mockup:scale-[1.03]">
                       <div className="absolute inset-0 bg-grid-subtle opacity-40 pointer-events-none" />
 
                       {/* Demonstration Stamp */}

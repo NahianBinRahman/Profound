@@ -37,14 +37,20 @@ export function ServicesSection() {
             </p>
           </div>
 
-          <div className="flex items-center gap-3">
-            <Button href="/services" variant="glass" size="md">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
+            <Button
+              href="/services"
+              variant="glass"
+              size="md"
+              className="w-full sm:w-auto justify-center"
+            >
               View All Services
             </Button>
             <Button
               href="/contact"
               variant="electric"
               size="md"
+              className="w-full sm:w-auto justify-center font-bold shadow-[0_0_20px_rgba(0,229,255,0.35)]"
               icon={<ArrowUpRight className="w-4 h-4 text-[#050608]" />}
             >
               Start a Project

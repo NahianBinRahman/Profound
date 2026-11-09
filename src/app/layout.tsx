@@ -3,6 +3,7 @@ import { Geist, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { CustomCursor } from "@/components/ui/CustomCursor";
+import { MobileFloatingCta } from "@/components/ui/MobileFloatingCta";
 import { JsonLd } from "@/components/seo/JsonLd";
 
 const geistSans = Geist({
@@ -91,6 +92,7 @@ export default function RootLayout({
         <ScrollProgress />
         <CustomCursor />
         {children}
+        <MobileFloatingCta />
       </body>
     </html>
   );

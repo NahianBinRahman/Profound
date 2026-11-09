@@ -45,7 +45,13 @@ export function TechEcosystem() {
       </Container>
 
       {/* Infinite Continuous Marquee Track */}
-      <div className="relative w-full overflow-hidden flex [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
+      <div
+        className="relative w-full overflow-hidden flex"
+        style={{
+          WebkitMaskImage: "linear-gradient(to right, transparent, black 12%, black 88%, transparent)",
+          maskImage: "linear-gradient(to right, transparent, black 12%, black 88%, transparent)",
+        }}
+      >
         <div className="flex shrink-0 items-center gap-4 sm:gap-6 animate-marquee py-2 select-none">
           {duplicatedItems.map((item, idx) => {
             const Icon = item.Icon;

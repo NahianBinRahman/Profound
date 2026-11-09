@@ -85,7 +85,7 @@ export function WhyChooseProfound() {
             <SpotlightCard
               data-cursor
               data-cursor-text="WHY US"
-              className="group h-full p-8 sm:p-10 transition-all duration-500 flex flex-col justify-between hover:border-[#00e5ff]/35 hover:shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_40px_rgba(0,229,255,0.15)]"
+              className="group h-full p-6 sm:p-10 transition-all duration-500 flex flex-col justify-between hover:border-[#00e5ff]/35 hover:shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_40px_rgba(0,229,255,0.15)]"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">
@@ -107,7 +107,7 @@ export function WhyChooseProfound() {
                 </p>
               </div>
 
-              <div className="mt-8 pt-6 border-t border-white/[0.08] grid grid-cols-2 sm:grid-cols-3 gap-4">
+              <div className="mt-8 pt-6 border-t border-white/[0.08] grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
                 <div className="flex items-center gap-2 text-xs text-neutral-300">
                   <CheckCircle2 className="w-4 h-4 text-[#00e5ff]" />
                   <span>Zero vendor handoffs</span>
@@ -116,7 +116,7 @@ export function WhyChooseProfound() {
                   <CheckCircle2 className="w-4 h-4 text-[#00e5ff]" />
                   <span>Single accountability</span>
                 </div>
-                <div className="hidden sm:flex items-center gap-2 text-xs text-neutral-300">
+                <div className="flex items-center gap-2 text-xs text-neutral-300">
                   <CheckCircle2 className="w-4 h-4 text-[#00e5ff]" />
                   <span>End-to-end velocity</span>
                 </div>
@@ -129,7 +129,7 @@ export function WhyChooseProfound() {
             <SpotlightCard
               data-cursor
               data-cursor-text="WHY US"
-              className="group h-full p-8 sm:p-10 transition-all duration-500 flex flex-col justify-between hover:border-emerald-500/30 hover:shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(52,211,153,0.12)]"
+              className="group h-full p-6 sm:p-10 transition-all duration-500 flex flex-col justify-between hover:border-emerald-500/30 hover:shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(52,211,153,0.12)]"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">
@@ -158,7 +158,7 @@ export function WhyChooseProfound() {
             <SpotlightCard
               data-cursor
               data-cursor-text="WHY US"
-              className="group h-full p-8 sm:p-10 transition-all duration-500 flex flex-col justify-between hover:border-[#00e5ff]/35 hover:shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(0,229,255,0.12)]"
+              className="group h-full p-6 sm:p-10 transition-all duration-500 flex flex-col justify-between hover:border-[#00e5ff]/35 hover:shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(0,229,255,0.12)]"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">
@@ -187,7 +187,7 @@ export function WhyChooseProfound() {
             <SpotlightCard
               data-cursor
               data-cursor-text="WHY US"
-              className="group h-full p-8 sm:p-10 transition-all duration-500 flex flex-col justify-between hover:border-purple-500/35 hover:shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(168,85,247,0.12)]"
+              className="group h-full p-6 sm:p-10 transition-all duration-500 flex flex-col justify-between hover:border-purple-500/35 hover:shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(168,85,247,0.12)]"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">
@@ -216,7 +216,7 @@ export function WhyChooseProfound() {
             <SpotlightCard
               data-cursor
               data-cursor-text="WHY US"
-              className="group h-full p-8 sm:p-10 transition-all duration-500 flex flex-col justify-between hover:border-sky-500/35 hover:shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(14,165,233,0.12)]"
+              className="group h-full p-6 sm:p-10 transition-all duration-500 flex flex-col justify-between hover:border-sky-500/35 hover:shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_35px_rgba(14,165,233,0.12)]"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">

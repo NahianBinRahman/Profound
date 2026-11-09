@@ -69,16 +69,22 @@ export function AgencyIntro() {
                 </p>
               </div>
 
-              <div className="mt-8 sm:mt-10 flex items-center gap-4">
+              <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
                 <Button
                   href="/about"
                   variant="primary"
                   size="md"
+                  className="w-full sm:w-auto justify-center"
                   icon={<ArrowUpRight className="w-4 h-4 text-black" />}
                 >
                   Learn Our Story
                 </Button>
-                <Button href="/approach" variant="glass" size="md">
+                <Button
+                  href="/approach"
+                  variant="glass"
+                  size="md"
+                  className="w-full sm:w-auto justify-center"
+                >
                   Our Methodology
                 </Button>
               </div>
