@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <!-- PROFOUND Favicon - Micro-Scale Optimization -->
+  <rect width="64" height="64" rx="14" fill="#050505"/>
+  <!-- Symbol Centered -->
+  <rect x="12" y="12" width="10" height="40" rx="2" fill="#FFFFFF"/>
+  <path d="M22 12 H42 C49.732 12 56 18.268 56 26 C56 33.732 49.732 40 42 40 H22 V12 Z M32 20 V32 H41 C44.314 32 47 29.314 47 26 C47 22.686 44.314 20 41 20 H32 Z" fill="#FFFFFF"/>
+  <!-- Electric Blue Aperture Beacon -->
+  <rect x="36" y="23" width="6" height="6" rx="1.5" fill="#1677FF"/>
+</svg>
+

@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #050608;
+    --bg-secondary: #0d0f14;
+    --bg-card: rgba(13, 15, 20, 0.72);
+    --bg-card-hover: rgba(20, 23, 33, 0.85);
+    
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-highlight: rgba(255, 255, 255, 0.16);
+    --border-accent: rgba(0, 229, 255, 0.4);
+
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+
+    --accent-electric: #00e5ff;
+    --accent-electric-glow: rgba(0, 229, 255, 0.25);
+    --accent-silver: #e2e8f0;
+    --accent-silver-metallic: #94a3b8;
+  }
+
+  * {
+    border-color: var(--border-subtle);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    selection-background-color: #00e5ff;
+    selection-color: #050608;
+  }
+}
+
+/* Custom Glass & Backdrop Utilities */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-highlight);
+  box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.7), 0 0 20px -5px var(--accent-electric-glow);
+}
+
+.glass-nav {
+  background: rgba(7, 9, 13, 0.78);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* Ambient Radial Glows */
+.glow-electric {
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.15) 0%, rgba(0, 112, 243, 0.05) 50%, transparent 75%);
+}
+
+.glow-silver {
+  background: radial-gradient(circle, rgba(226, 232, 240, 0.08) 0%, rgba(148, 163, 184, 0.02) 60%, transparent 80%);
+}
+
+/* Subtle Animated Grid */
+.bg-grid-subtle {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
+
+/* Infinite Seamless Marquees */
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marqueeReverse {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marqueeReverse 35s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover,
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+/* Atmospheric Ambient Floating Drift */
+@keyframes atmosphericDrift {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(30px, -40px, 0) scale(1.06);
+  }
+}
+
+@keyframes atmosphericDriftReverse {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-35px, 35px, 0) scale(0.95);
+  }
+}
+
+.animate-drift-slow {
+  animation: atmosphericDrift 26s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-drift-reverse {
+  animation: atmosphericDriftReverse 32s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Smooth Fade In Up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Editorial Serif Accent Class */
+.font-editorial {
+  font-family: var(--font-serif), Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Accessibility: Strict Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .animate-drift-slow,
+  .animate-drift-reverse {
+    animation: none !important;
+  }
+}

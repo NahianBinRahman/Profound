@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <!-- PROFOUND Symbol (Light Background Version) -->
+  <!-- Monolithic Pillar -->
+  <rect x="16" y="14" width="16" height="72" rx="3" fill="#050505"/>
+  <!-- Precision P Loop -->
+  <path d="M32 14 H66 C78.15 14 88 23.85 88 36 C88 48.15 78.15 58 66 58 H32 V14 Z M48 28 V44 H64 C68.418 44 72 40.418 72 36 C72 31.582 68.418 28 64 28 H48 Z" fill="#050505"/>
+  <!-- Electric Blue Aperture Core -->
+  <rect x="56" y="32" width="8" height="8" rx="2" fill="#1677FF"/>
+</svg>
+

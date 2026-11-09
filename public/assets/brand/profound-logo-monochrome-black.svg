@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 64" width="340" height="64" fill="none">
+  <!-- PROFOUND Monochrome Black Logo -->
+  <g transform="translate(6, 8) scale(0.48)">
+    <rect x="16" y="14" width="16" height="72" rx="3" fill="#050505"/>
+    <path d="M32 14 H66 C78.15 14 88 23.85 88 36 C88 48.15 78.15 58 66 58 H32 V14 Z M48 28 V44 H64 C68.418 44 72 40.418 72 36 C72 31.582 68.418 28 64 28 H48 Z" fill="#050505"/>
+    <rect x="56" y="32" width="8" height="8" rx="2" fill="#050505"/>
+  </g>
+  <text x="68" y="41" font-family="'Geist', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="800" letter-spacing="0.18em" fill="#050505">
+    PROFOUND
+  </text>
+  <rect x="298" y="33" width="7" height="7" rx="1.5" fill="#050505"/>
+</svg>
+
